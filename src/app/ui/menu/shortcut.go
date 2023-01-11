@@ -52,13 +52,6 @@ func (m *Menu) addShortcuts() {
 		ThirdKey:     glfw.KeyW,
 		Action:       m.app.DoCloseAll,
 	})
-	m.shortcuts.Add(shortcut.Shortcut{
-		Name:        "menu#DoExit",
-		FirstKey:    platform.KeyModLeft(),
-		FirstKeyAlt: platform.KeyModRight(),
-		SecondKey:   glfw.KeyQ,
-		Action:      m.app.DoExit,
-	})
 
 	m.shortcuts.Add(shortcut.Shortcut{
 		Name:        "menu#DoUndo",
